@@ -1,0 +1,40 @@
+{% extends "template.html" %}
+
+{% block picword %}Hello{% endblock %}
+
+{% block sidecontent %}
+
+    <h2>Sign in</h2>
+    <form action = "{{url_for('signedin')}}" method = "post">
+      <div class="form-group">
+        <label for="formGroupExampleInput">Username</label>
+        <input type="text" class="form-control" name="name" placeholder="Enter Username" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    Don't have an account?  
+    <a href="{{ url_for('signup') }}">Click here.</a>
+
+
+
+{% endblock %}
+
+{% block rightHeader %}
+<h3>About:</h3>
+{% endblock %}
+
+{% block imagecontent %}
+<h5 class="mt-0">How the website works</h5>
+<p>Sign up and create an account or sign in to search books, review and make comments using this website.
+    <br>
+  <p>
+    You are only allowed to leave 1 review per book
+  </p>
+
+  </p>
+{% endblock %}

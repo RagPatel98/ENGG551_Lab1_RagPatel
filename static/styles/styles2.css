@@ -1,0 +1,204 @@
+.navbar{
+    background-color: rgb(255, 255, 255);
+    display:flex;
+}
+
+.navbar a:hover{
+    background-color: Black;
+    color: white;
+}
+.navbar a {
+   color: black;
+   padding: 14px 20px;
+   text-decoration: none;
+   text-align: center;
+ }
+
+ @media (max-width: 700px) {
+    .navbar {   
+    flex-direction: column;
+  }
+}
+
+.header{
+
+    position: relative;
+    text-align: left;
+    color:  white;
+
+}
+
+.bottomcenter{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+
+}
+
+.picContainer{
+    position: relative;
+    text-align: center;
+    color:  white;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  p.round{
+    border: 2px white;
+    border-radius: 12px;
+  }
+
+  .sideCol{
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+
+  .rowCon{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(76, 76, 90);
+    color: black;
+    text-align: center;
+  }
+
+  .main2 {
+    flex: 100%;
+    background-color: black;
+    padding: 20px;
+  }
+
+  table{
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #333333;
+}
+
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: black;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: white;
+}
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+.detailBox {
+    width:320px;
+    border:1px solid #bbb;
+    margin:50px;
+}
+.titleBox {
+    background-color:#666666;
+    padding:10px;
+}
+.titleBox label{
+  color:rgb(207, 207, 207);
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted rgb(88, 88, 88);
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:rgb(128, 128, 128);
+    font-family:'Times New Roman';
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
